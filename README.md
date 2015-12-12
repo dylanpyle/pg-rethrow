@@ -6,7 +6,8 @@ metadata, but most importantly an opaque `code` property, e.g. `23502`.
 
 Since this isn't very useful to humans, this library parses these codes and
 throws custom errors (such as `NotNullViolation`) that are a lot easier to work
-with. This is especially useful with libraries like [Bluebird](https://github.com/petkaantonov/bluebird)
+with.
+This is especially useful with libraries like [Bluebird](https://github.com/petkaantonov/bluebird)
 that let you `catch` custom errors individually.
 
 Built for use with [pg-promise](https://github.com/vitaly-t/pg-promise), but
@@ -22,7 +23,7 @@ $ npm install --save pg-rethrow
 import rethrow from 'pg-rethrow';
 
 DB.query('UPDATE...')
-  .catch(rethrow)  .catch(rethrow.ERRORS.NotNullViolation, (err) => {
+  .catch(rethrow)
   .catch(rethrow.ERRORS.NotNullViolation, (err) => {
     console.log('Oh no! A Not Null violation!');
   });
