@@ -48,8 +48,6 @@ Object.keys(errorCodes).forEach((key) => {
   const value = errorCodes[key];
   const capitalizedName = value.split('_').map(capitalize).join('');
 
-  console.log(capitalizedName);
-
   const ctr = getErrorConstructor(capitalizedName);
 
   ERRORS[capitalizedName] = ctr;
