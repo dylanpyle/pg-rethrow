@@ -14,6 +14,10 @@ should work with most PostgreSQL clients and ORMs.
 
 ## Usage
 
+```bash
+$ npm install --save pg-rethrow
+```
+
 ```javascript
 import rethrow from 'pg-rethrow';
 
