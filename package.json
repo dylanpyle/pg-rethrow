@@ -1,0 +1,20 @@
+{
+  "name": "pg-rethrow",
+  "version": "1.0.0",
+  "description": "Transform PostgreSQL errors into useful, custom Error types",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha test.js",
+    "lint": "$(npm bin)/eslint . --ignore-path .gitignore"
+  },
+  "author": "Dylan Pyle <me@dylanpyle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pg-error-codes": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-dylan": "^1.0.0",
+    "mocha": "^2.3.4"
+  }
+}
